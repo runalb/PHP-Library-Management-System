@@ -31,6 +31,12 @@ session_start();
     <button class="btn btn-outline logout-btn" onclick="location.href='user-logout.php'">Logout</button>
   </div>
 
+  <div class="mt-4">
+    <div class="text-center p-3">
+        <h2 class="theme-color" id="welcome">Welcome Back !</h2>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row my-4">
 
