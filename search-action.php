@@ -67,11 +67,11 @@ session_start();
             }
 
             echo"</tbody></table>";
-            echo"<form action='dashboard.php'><button type='submit' class='btn bg-light btn-block mt-4'>Done</button></form>";
+            echo"<form action='dashboard.php'><button type='submit' class='btn action-btn btn-block mt-4'>Done</button></form>";
             }
             if(mysqli_num_rows($ret)==0)
             {
-                      echo "<h3 class='text-center'>No such Books are thier....</h3><div class='col'><form action='dashboard.php'><button type='submit' class='btn bg-light btn-block mt-4'>Done</button></form></div>";
+                      echo "<h3 class='text-center'>No such Books are thier....</h3><div class='col'><form action='dashboard.php'><button type='submit' class='btn action-btn btn-block mt-4'>Done</button></form></div>";
 		
             }?>
                 
