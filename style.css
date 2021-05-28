@@ -36,14 +36,14 @@
  /* Dashboard */
 
  .logout-btn{
-     color: #3F3D56;
-     border: 1px solid #3F3D56;
+     color: #017a9b;
+     border: 1px solid #017a9b;
  }
 
  .logout-btn:hover{
     color: white;
-    border: 0px solid #3F3D56;
-    background-color: #3F3D56;
+    border: 1px solid #017a9b;
+    background-color: #017a9b;
 }
 
 .action-btn{
