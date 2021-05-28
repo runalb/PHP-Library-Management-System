@@ -54,7 +54,13 @@ session_start();
             <div class="col-12 col-lg-12 ">
                 <div class="row align-items-center h-100" >
                     <div class="col-5 mx-auto">
-                        <h3 class="login-header pb-2 text-center">Login</h3>
+
+                        <div class="mt-4">
+                            <div class="text-center p-3">
+                                <h2 class="theme-color">Login</h2>
+                            </div>
+                        </div>
+
                         <form action="user-login.php" method="get">
                             <div class="form-group">
                             <label for="loginUsername">Username</label>
