@@ -67,7 +67,7 @@ session_start();
             
 			            echo"</tbody></table>";
                      
-                  echo"<form action='dashboard.php'><button class='btn bg-light btn-block' type='submit'>Go Back</button></form>";
+                  echo"<form action='dashboard.php'><button class='btn action-btn btn-block' type='submit'>Go Back</button></form>";
                   echo"</div>";
                   }
                   if(mysqli_num_rows($ret)==0)
