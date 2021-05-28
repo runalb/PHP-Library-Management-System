@@ -58,11 +58,11 @@ session_start();
                   if(mysqli_num_rows($ret)>0)
                   {
 					          
-                    echo"<table class='table table-striped'><thead><tr><th scope='col'>Book ID</th><th scope='col'>Book Name</th><th scope='col'>Author</th><th scope='col'>Publisher</th><th scope='col'>Number of Copies</th></tr></thead><tbody>";
+                    echo"<table class='table table-striped'><thead><tr><th scope='col'>Book ID</th><th scope='col'>Book Name</th><th scope='col'>Author</th><th scope='col'>Number of Copies</th></tr></thead><tbody>";
                 
 					          while($row=mysqli_fetch_assoc($ret))
 					          {
-						          echo"<tr><th scope='row'>{$row['book_id']}</th><td>{$row['book_name']}</td><td>{$row['aut_name']}</td><td>{$row['pub']}</td><td>{$row['qty']}</td></tr>";
+						          echo"<tr><th scope='row'>{$row['book_id']}</th><td>{$row['book_name']}</td><td>{$row['aut_name']}</td><td>{$row['qty']}</td></tr>";
 					          }
             
 			            echo"</tbody></table>";

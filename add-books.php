@@ -51,9 +51,6 @@ session_start();
                             <input type="text" required name="autname" class="form-control" placeholder="Author Name">
                         </div>
                         <div class="form-group mx-4 mt-4">
-                            <input type="text" required name="pub" class="form-control" placeholder="Publisher">
-                        </div>
-                        <div class="form-group mx-4 mt-4">
                             <input type="number" required name="qty" class="form-control" placeholder="Quantity">
                         </div>
                         <button type="submit" class="btn login-btn btn-block my-4">Add Books</button>
