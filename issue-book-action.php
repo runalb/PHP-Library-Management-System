@@ -82,22 +82,22 @@ session_start();
 				$resul = $conn->query($sql2);
 				
 				//echo "New record created successfully";
-				echo "<h4 class='m-4 text-center'>Book Issued Successfully....</h4><form action='dashboard.php'><button class='btn btn-block bg-light m-4' type='submit'>Done</button></form>";
+				echo "<h4 class='m-4 text-center'>Book Issued Successfully....</h4><form action='dashboard.php'><button class='btn btn-block action-btn m-4' type='submit'>Done</button></form>";
 		
 		
 				} else {
-					// echo "<h4 class='m-4 text-center'>Book ID is already taken!!!!</h4><form action='dashboard.php'><button class='btn btn-block bg-light m-4' type='submit'>Done</button></form>";
+					// echo "<h4 class='m-4 text-center'>Book ID is already taken!!!!</h4><form action='dashboard.php'><button class='btn btn-block action-btn m-4' type='submit'>Done</button></form>";
 					
 				}
 			}
 		
 			else {
-				echo "<h4 class='m-4 text-center'>No such book found</h4><form action='dashboard.php'><button class='btn btn-block bg-light m-4' type='submit'>Done</button></form>";
+				echo "<h4 class='m-4 text-center'>No such book found</h4><form action='dashboard.php'><button class='btn btn-block action-btn m-4' type='submit'>Done</button></form>";
 			}
 		}
 		else
 		{
-			echo "<h4 class='m-4 text-center'>Already 3 Books are taken...</h4><form action='dashboard.php'><button class='btn btn-block bg-light m-4' type='submit'>Done</button></form>";
+			echo "<h4 class='m-4 text-center'>Already 3 Books are taken...</h4><form action='dashboard.php'><button class='btn btn-block action-btn m-4' type='submit'>Done</button></form>";
 			
 		}
 
