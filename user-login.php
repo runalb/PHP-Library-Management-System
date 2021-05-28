@@ -15,7 +15,7 @@ session_start();
 <body>
 
     
-<?php
+    <?php
 		$userid = filter_input(INPUT_GET,'userid');
 		$userpass = filter_input(INPUT_GET,'userpass');
 		
@@ -80,6 +80,6 @@ session_start();
             }
         }
 		
-		?>
+	?>
 </body>
 </html>
