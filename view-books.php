@@ -72,7 +72,7 @@ session_start();
                   }
                   if(mysqli_num_rows($ret)==0)
                   {
-                      echo "<h1 class='text-center'>No Books are thier to view....</h1><div class='col'><form action='dashboard.php'><button type='submit' class='btn bg-light btn-block mt-4'>Done</button></form></div>";
+                      echo "<h1 class='text-center'>No Books are thier to view....</h1><div class='col'><form action='dashboard.php'><button type='submit' class='btn action-btn btn-block mt-4'>Done</button></form></div>";
 
                   }?>
                 
