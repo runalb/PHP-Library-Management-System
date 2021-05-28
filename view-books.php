@@ -32,9 +32,9 @@ session_start();
       <div class="container h-100">
         <div class="row align-items-center h-100" >
             
-          <div class="col-12 mx-auto">
+          <div class="col-8 mx-auto">
 
-                <div class="mt-2">
+                <div class="mt-4">
                     <div class="text-center p-3">
                         <h3 class="theme-color">All Books</h3>
                     </div>
