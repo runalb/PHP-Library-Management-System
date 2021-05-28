@@ -46,9 +46,9 @@ session_start();
 							$sql = "CREATE TABLE IF NOT EXISTS book_database (
 								book_id VARCHAR(50) PRIMARY KEY,
 								book_name VARCHAR(50), 
-								aut_name VARCHAR(50),
-								pub VARCHAR(50),
-								qty INT(11)
+								author_name VARCHAR(50),
+								publisher VARCHAR(50),
+								quantity INT(11)
 							)";
 
 							if ($conn->query($sql) === TRUE) {
