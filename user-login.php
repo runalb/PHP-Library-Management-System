@@ -45,7 +45,38 @@ session_start();
                 header("Location: dashboard.php");
                 
             }else {
-                echo "<div class='container-fluid'><div class='row align-items-center h-100' ><div class='col-3 mx-auto'><div class='mt-4' id='card'><p>Invalid Id or Password!!!</p><p>Try again with valid Id and Password</p><form action='index.php' method='get'><button class='btn login-btn' type='submit' id='done'>Done</button></form></div></div></div></div>";
+
+                echo '
+                    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+                        <a class="navbar-brand my-0 mr-md-auto" href="dashboard.php">
+                            <img src="images/simplelogo-dark.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
+                        </a>
+                        <button class="btn btn-outline logout-btn" onclick="location.href="user-logout.php" ">Login</button>
+                    </div>
+
+                    <div class="container h-100">
+                        <div class="row align-items-center h-100" >
+                            <div class="col-8 mx-auto">
+                                <div class="mt-4">
+                                    <div class="text-center p-3">
+                                        <h3 class="theme-color">Invalid Id or Password!!!</h3>
+                                    </div>
+                                </div>
+                                <h6 class="text-center">Enter valid Id and Password</h6>
+                                <div class="col-4 mx-auto">
+                                    <div class="mt-4">
+                                        <div class="col">
+                                            <form action="index.php">
+                                                <button type="submit" class="btn action-btn btn-block ">Try again</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ';
+        
             }
         }
 		
