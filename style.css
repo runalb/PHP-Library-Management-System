@@ -19,10 +19,6 @@
 .background{
     width: 100%;
     height: 100vh;
-    background-image: url("images/bglogin.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
  .login-btn{

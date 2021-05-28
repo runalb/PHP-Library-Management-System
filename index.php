@@ -38,35 +38,38 @@ session_start();
 		$conn->close();
 		}
 		?>
-    <div class="container-fluid">
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <a class="navbar-brand my-0 mr-md-auto" href="dashboard.php">
+            <img src="images/simplelogo-dark.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
+        </a>
+        
+        <button class="btn btn-outline logout-btn" onclick="location.href='user-logout.php'">Login</button>
+    </div> 
+      
+      
+    <div class="container h-100">
         <div class="row">
-            <div class="col-6 col-lg-6 background">
-                <nav class="navbar">
-                    <a class="navbar-brand" href="dashboard.php">
-                        <img src="images/simplelogo.svg" alt="logo" width="140" height="50" alt="" loading="lazy">
-                    </a>
-                </nav>
-            </div>
-            <div class="col-6 col-lg-6 ">
-                <div class="container h-100">
-                    <div class="row align-items-center h-100" >
-                        <div class="col-8 mx-auto">
-                            <h3 class="login-header pb-2">Login</h3>
-                            <form action="user-login.php" method="get">
-                                <div class="form-group">
-                                <label for="loginUsername">Username</label>
-                                <input type="text" name="userid" class="form-control" id="loginUsername" aria-describedby="emailHelp">
-                                </div>
-                                <div class="form-group pb-2">
-                                <label for="loginPassword">Password</label>
-                                <input type="password" name="userpass" class="form-control" id="loginPassword">
-                                </div>
-                                <button type="submit" class="btn login-btn btn-block">Login</button>
-                            </form>
-                        </div>
+
+            <div class="col-12 col-lg-12 ">
+                <div class="row align-items-center h-100" >
+                    <div class="col-5 mx-auto">
+                        <h3 class="login-header pb-2 text-center">Login</h3>
+                        <form action="user-login.php" method="get">
+                            <div class="form-group">
+                            <label for="loginUsername">Username</label>
+                            <input type="text" name="userid" class="form-control" id="loginUsername" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group pb-2">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" name="userpass" class="form-control" id="loginPassword">
+                            </div>
+                            <button type="submit" class="btn login-btn btn-block">Login</button>
+                        </form>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
