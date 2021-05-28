@@ -3,16 +3,16 @@
 }
 
 .theme-color{
-    color: #3D339A;
+    color: #017a9b;
 }
 
 .theme-btn{
-    color: #3D339A;
-    background-color: #3D339A;
+    color: #017a9b;
+    background-color: #017a9b;
 }
 
 .login-header{
-    color: #3D339A;
+    color: #017a9b;
     font-weight: 600;
 }
 
@@ -26,7 +26,7 @@
 }
 
  .login-btn{
-     background-color: #3D339A;
+     background-color: #017a9b;
      color: white;
  }
  .login-btn:hover{
@@ -47,7 +47,7 @@
 }
 
 .action-btn{
-    background-color: #3D339A;
+    background-color: #017a9b;
     color: white;
 }
 
@@ -79,5 +79,5 @@
 }
 
 .search-btn{
-    background-color: #3D339A;
+    background-color: #017a9b;
 }
