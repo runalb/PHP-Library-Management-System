@@ -62,7 +62,7 @@ session_start();
                 
 					          while($row=mysqli_fetch_assoc($ret))
 					          {
-						          echo"<tr><th scope='row'>{$row['book_id']}</th><td>{$row['book_name']}</td><td>{$row['aut_name']}</td><td>{$row['qty']}</td></tr>";
+						          echo"<tr><th scope='row'>{$row['book_id']}</th><td>{$row['book_name']}</td><td>{$row['author_name']}</td><td>{$row['quantity']}</td></tr>";
 					          }
             
 			            echo"</tbody></table>";
