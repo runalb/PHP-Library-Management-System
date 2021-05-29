@@ -49,7 +49,7 @@ session_start();
                     die("Connection failed: " . $conn->connect_error);
                 } 
                 
-                $sql = "CREATE TABLE IF NOT EXISTS admin_database (
+                $sql = "CREATE TABLE IF NOT EXISTS admin_table (
                   user_name VARCHAR(50) PRIMARY KEY,
                   user_fullname VARCHAR(50), 
                   user_email_id VARCHAR(50),
@@ -69,7 +69,7 @@ session_start();
                 
 
 
-                $sql2 = "INSERT INTO admin_database (user_name, user_fullname, user_email_id, user_password) 
+                $sql2 = "INSERT INTO admin_table (user_name, user_fullname, user_email_id, user_password) 
                 VALUES ('$username','$name','$email', '$userpass')";
 
 

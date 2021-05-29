@@ -55,7 +55,7 @@ session_start();
 		
 		$book = filter_input(INPUT_GET,'query');
 		
-		$sql="SELECT * FROM book_database WHERE book_id='$book' OR book_name='$book'";
+		$sql="SELECT * FROM book_table WHERE book_id='$book' OR book_name='$book'";
 		$ret=mysqli_query($conn,$sql);
             if(mysqli_num_rows($ret)>0)
             {

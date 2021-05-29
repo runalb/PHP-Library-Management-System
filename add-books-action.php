@@ -43,7 +43,7 @@ session_start();
 								die("Connection failed: " . $conn->connect_error);
 							} 
 							
-							$sql = "CREATE TABLE IF NOT EXISTS book_database (
+							$sql = "CREATE TABLE IF NOT EXISTS book_table (
 								book_id VARCHAR(50) PRIMARY KEY,
 								book_name VARCHAR(50), 
 								author_name VARCHAR(50),
@@ -62,7 +62,7 @@ session_start();
 							$qty = filter_input(INPUT_GET,'qty');
 
 
-							$sql = "INSERT INTO book_database (book_id, book_name, author_name,quantity) 
+							$sql = "INSERT INTO book_table (book_id, book_name, author_name,quantity) 
 							VALUES ('$bookid', '$bookname','$autname','$qty')";
 
 

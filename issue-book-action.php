@@ -48,7 +48,7 @@ session_start();
 			die("Connection failed: " . $conn->connect_error);
 		} 
 		
-		$sql = "CREATE TABLE IF NOT EXISTS issue_database (
+		$sql = "CREATE TABLE IF NOT EXISTS issue_table (
 			student_id VARCHAR(50),
 			book_id VARCHAR(50),
 			date VARCHAR(30)
@@ -65,20 +65,20 @@ session_start();
 		$bookid = filter_input(INPUT_GET,'bookid');
 		$date = filter_input(INPUT_GET,'date');
 		
-		$sql1 = "SELECT * FROM issue_database WHERE student_id='$studentid'";
+		$sql1 = "SELECT * FROM issue_table WHERE student_id='$studentid'";
 		$res = $conn->query($sql1);
 
 		if ($res->num_rows < 3) {
 		
-			$sql1 = "SELECT * FROM book_database WHERE book_id='$bookid' AND quantity>0";
+			$sql1 = "SELECT * FROM book_table WHERE book_id='$bookid' AND quantity>0";
 			$result = $conn->query($sql1);
 
 			if ($result->num_rows > 0) {
-				$sql = "INSERT INTO issue_database (student_id,book_id, date) 
+				$sql = "INSERT INTO issue_table (student_id,book_id, date) 
 				VALUES ('$studentid','$bookid','$date')";
 			
 				if ($conn->query($sql) === TRUE) {
-				$sql2 = "UPDATE book_database SET quantity=quantity-1 WHERE book_id='$bookid'";
+				$sql2 = "UPDATE book_table SET quantity=quantity-1 WHERE book_id='$bookid'";
 				$resul = $conn->query($sql2);
 				
 				//echo "New record created successfully";

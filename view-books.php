@@ -53,7 +53,7 @@ session_start();
 			              die("Connection failed: " . $conn->connect_error);
 		              } 
 
-                  $sql='SELECT * FROM book_database';
+                  $sql='SELECT * FROM book_table';
                   $ret=mysqli_query($conn,$sql);
                   if(mysqli_num_rows($ret)>0)
                   {
