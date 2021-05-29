@@ -64,11 +64,11 @@ session_start();
                         <form action="user-login-action.php" method="get">
                             <div class="form-group">
                             <label for="loginUsername">Username</label>
-                            <input type="text" name="userid" class="form-control" id="loginUsername" aria-describedby="emailHelp">
+                            <input type="text" name="username" class="form-control" id="loginUsername" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group pb-2">
                             <label for="loginPassword">Password</label>
-                            <input type="password" name="userpass" class="form-control" id="loginPassword">
+                            <input type="password" name="password" class="form-control" id="loginPassword">
                             </div>
                             <button type="submit" class="btn login-btn btn-block">Login</button>
                         </form>

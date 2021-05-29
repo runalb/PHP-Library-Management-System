@@ -23,12 +23,12 @@ session_start();
 
     
     <?php
-		$userid = filter_input(INPUT_GET,'userid');
-		$userpass = filter_input(INPUT_GET,'userpass');
+		$username = filter_input(INPUT_GET,'username');
+		$password = filter_input(INPUT_GET,'password');
 		
-		if($userid=="user" && $userpass=="1234")
+		if($username=="user" && $password=="1234")
 		{
-            $_SESSION["userid"] = $userid;
+            $_SESSION["username"] = $username;
             header("Location: dashboard.php");
 			
 		}else{
@@ -44,11 +44,11 @@ session_start();
                 die("Connection failed: " . $conn->connect_error);
             } 
 
-            $sql = "SELECT * FROM admin_database WHERE user_id='$userid' AND user_password='$userpass'";
+            $sql = "SELECT * FROM admin_database WHERE user_name='$username' AND user_password='$password'";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-                $_SESSION["userid"] = $userid;
+                $_SESSION["username"] = $username;
                 header("Location: dashboard.php");
                 
             }else {
