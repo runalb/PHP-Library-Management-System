@@ -14,6 +14,13 @@ session_start();
 </head>
 <body>
 
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <a class="navbar-brand my-0 mr-md-auto" href="dashboard.php">
+            <img src="images/simplelogo-dark.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
+        </a>
+        <button class="btn btn-outline logout-btn" onclick="location.href="user-logout.php" ">Login</button>
+    </div>
+
     
     <?php
 		$userid = filter_input(INPUT_GET,'userid');
@@ -47,13 +54,6 @@ session_start();
             }else {
 
                 echo '
-                    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-                        <a class="navbar-brand my-0 mr-md-auto" href="dashboard.php">
-                            <img src="images/simplelogo-dark.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
-                        </a>
-                        <button class="btn btn-outline logout-btn" onclick="location.href="user-logout.php" ">Login</button>
-                    </div>
-
                     <div class="container h-100">
                         <div class="row align-items-center h-100" >
                             <div class="col-8 mx-auto">
