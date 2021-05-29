@@ -47,7 +47,6 @@ session_start();
 								book_id VARCHAR(50) PRIMARY KEY,
 								book_name VARCHAR(50), 
 								author_name VARCHAR(50),
-								publisher VARCHAR(50),
 								quantity INT(11)
 							)";
 
@@ -60,12 +59,11 @@ session_start();
 							$bookid = filter_input(INPUT_GET,'bookid');
 							$bookname = filter_input(INPUT_GET,'bookname');
 							$autname = filter_input(INPUT_GET,'autname');
-							$pub = filter_input(INPUT_GET,'pub');
 							$qty = filter_input(INPUT_GET,'qty');
 
 
-							$sql = "INSERT INTO book_database (book_id, book_name, aut_name, pub,qty) 
-							VALUES ('$bookid', '$bookname','$autname','$pub','$qty')";
+							$sql = "INSERT INTO book_database (book_id, book_name, author_name,quantity) 
+							VALUES ('$bookid', '$bookname','$autname','$qty')";
 
 
 							if ($conn->query($sql) === TRUE) {

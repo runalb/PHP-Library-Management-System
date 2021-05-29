@@ -42,10 +42,10 @@ session_start();
                     </div>
                     <form action="add-books-action.php" method="get">
                         <div class="form-group mx-4 mt-4">
-                            <input type="text" required name="bookname" class="form-control" placeholder="Book Name">
+                            <input type="text" required name="bookid" class="form-control" placeholder="Book ID">
                         </div>
                         <div class="form-group mx-4 mt-4">
-                            <input type="text" required name="bookid" class="form-control" placeholder="Book ID">
+                            <input type="text" required name="bookname" class="form-control" placeholder="Book Name">
                         </div>
                         <div class="form-group mx-4 mt-4">
                             <input type="text" required name="autname" class="form-control" placeholder="Author Name">
