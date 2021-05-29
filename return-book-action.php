@@ -49,16 +49,16 @@ session_start();
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
+		$studentid = filter_input(INPUT_GET,'studentid');
 		$bookid = filter_input(INPUT_GET,'bookid');
-		$usn = filter_input(INPUT_GET,'studentid');
 		$rdate = filter_input(INPUT_GET,'date');
 		
-		$sql1 = "SELECT * FROM issue_database WHERE usn='$usn'";
+		$sql1 = "SELECT * FROM issue_database WHERE student_id='$studentid'";
         $res = $conn->query($sql1);
 
 		if ($res->num_rows > 0) {
 		
-        $sql1 = "SELECT date FROM issue_database WHERE usn='$usn' AND book_id='$bookid'";
+        $sql1 = "SELECT date FROM issue_database WHERE student_id='$studentid' AND book_id='$bookid'";
         $res = $conn->query($sql1);
         
         if($res->num_rows > 0 ){
@@ -73,7 +73,7 @@ session_start();
             
             
             $_SESSION["bookid"] = $bookid;
-            $_SESSION["usn"] = $usn;
+            $_SESSION["studentid"] = $studentid;
             
             
             if($aaa=='+')
@@ -82,9 +82,9 @@ session_start();
             }
             else{
                 
-                $sql = "DELETE FROM issue_database WHERE usn='$usn' AND book_id='$bookid'";
+                $sql = "DELETE FROM issue_database WHERE student_id='$studentid' AND book_id='$bookid'";
                 if ($conn->query($sql) === TRUE) {
-                    $sql2 = "UPDATE book_database SET qty=qty+1 WHERE book_id='$bookid'";
+                    $sql2 = "UPDATE book_database SET quantity=quantity+1 WHERE book_id='$bookid'";
                     $resul = $conn->query($sql2);
                     echo "<h3 class='text-center m-4'>Book Returned successfully</h3><form action='dashboard.php'><button class='btn btn-block login-btn' type='submit'>OK</button></form>";
                 } else {

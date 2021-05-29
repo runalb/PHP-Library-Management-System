@@ -46,11 +46,11 @@ session_start();
                     } 
                     
                     $bookid = $_SESSION["bookid"];
-                    $usn = $_SESSION["usn"];
+                    $studentid = $_SESSION["studentid"];
                     
-                        $sql = "DELETE FROM issue_database WHERE usn='$usn' AND book_id='$bookid'";
+                        $sql = "DELETE FROM issue_database WHERE student_id='$studentid' AND book_id='$bookid'";
                         if ($conn->query($sql) === TRUE) {
-                            $sql2 = "UPDATE book_database SET qty=qty+1 WHERE book_id='$bookid'";
+                            $sql2 = "UPDATE book_database SET quantity=quantity+1 WHERE book_id='$bookid'";
                             $resul = $conn->query($sql2);
                     
                             echo "<h3 class='text-center m-4'>Book Returned Successfully</h3><form action='dashboard.php'><button class='btn btn-block login-btn' type='submit'>OK</button></form>";
