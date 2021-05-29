@@ -50,10 +50,10 @@ session_start();
                 } 
                 
                 $sql = "CREATE TABLE IF NOT EXISTS admin_database (
-                    user_id VARCHAR(50) PRIMARY KEY,
-                    user_name VARCHAR(50), 
-                    user_email VARCHAR(50),
-                    user_password VARCHAR(50)
+                  user_name VARCHAR(50) PRIMARY KEY,
+                  user_fullname VARCHAR(50), 
+                  user_email_id VARCHAR(50),
+                  user_password VARCHAR(50)
                 )";
 
                 if ($conn->query($sql) === TRUE) {
@@ -62,18 +62,18 @@ session_start();
                 echo "Error creating table: " . $conn->error;
                 }
                 
-                $userid = filter_input(INPUT_GET,'userid');
-                $username = filter_input(INPUT_GET,'adminName');
+                $username = filter_input(INPUT_GET,'username');
+                $name = filter_input(INPUT_GET,'name');
                 $email = filter_input(INPUT_GET,'email');
                 $userpass = filter_input(INPUT_GET,'password');
                 
 
 
-                $sql = "INSERT INTO admin_database (user_id, user_name, user_email, user_password) 
-                VALUES ('$userid', '$username','$email', '$userpass')";
+                $sql2 = "INSERT INTO admin_database (user_name, user_fullname, user_email_id, user_password) 
+                VALUES ('$username','$name','$email', '$userpass')";
 
 
-                if ($conn->query($sql) === TRUE) {
+                if ($conn->query($sql2) === TRUE) {
                 //echo "New record created successfully";
                 echo "<h3 class='text-center m-4'>New admin added is successfully....</h3><form action='dashboard.php'><button class='btn btn-block login-btn' type='submit'>OK</button></form>";
                 } else {

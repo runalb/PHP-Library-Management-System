@@ -43,10 +43,10 @@ session_start();
                     </div>
                     <form action="add-admin-action.php" method="get">
                         <div class="form-group mx-4 mt-4">
-                            <input type="text" required name="adminName" class="form-control" placeholder="Name">
+                            <input type="text" required name="username" class="form-control" placeholder="Username">
                         </div>
                         <div class="form-group mx-4 mt-4">
-                            <input type="text" required name="userid" class="form-control" placeholder="Username">
+                            <input type="text" required name="name" class="form-control" placeholder="Name">
                         </div>
                         <div class="form-group mx-4 mt-4">
                             <input type="email" required  name="email" class="form-control" placeholder="Email">
