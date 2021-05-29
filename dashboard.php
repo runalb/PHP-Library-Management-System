@@ -68,7 +68,7 @@ session_start();
       </div>
 
       <div class="col-sm">
-        <button class="btn btn-block action-btn p-3" onclick="location.href='return-books.php'">
+        <button class="btn btn-block action-btn p-3" onclick="location.href='return-book.php'">
           <i class="fas fa-book pr-3"></i> Return Books
         </button>
       </div>
