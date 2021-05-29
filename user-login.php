@@ -44,7 +44,7 @@ session_start();
             <img src="images/simplelogo-dark.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
         </a>
         
-        <button class="btn btn-outline logout-btn" onclick="location.href='user-logout.php'">Login</button>
+        <button class="btn btn-outline logout-btn" onclick="location.href='user-login.php'">Login</button>
     </div> 
       
       
