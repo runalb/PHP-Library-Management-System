@@ -50,7 +50,7 @@ session_start();
                         </div>
                         <div class="form-group mx-4 mt-4">
                             <label for="lastDateToSubmit">Last Date to Return</label>
-                            <input type="date" id="lastDateToSubmit" name="date" class="form-control" placeholder="Book ID">
+                            <input type="date" id="lastDateToSubmit" required name="date" class="form-control" placeholder="Book ID">
                         </div>
                         <button type="submit" class="btn login-btn btn-block my-4">Issue Book</button>
                     </form>

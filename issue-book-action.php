@@ -49,7 +49,7 @@ session_start();
 		} 
 		
 		$sql = "CREATE TABLE IF NOT EXISTS issue_database (
-			usn VARCHAR(50),
+			student_id VARCHAR(50),
 			book_id VARCHAR(50),
 			date VARCHAR(30)
 			)";
@@ -61,24 +61,24 @@ session_start();
 		}
 		
 		
+		$studentid = filter_input(INPUT_GET,'studentid');
 		$bookid = filter_input(INPUT_GET,'bookid');
-		$usn = filter_input(INPUT_GET,'studentid');
 		$date = filter_input(INPUT_GET,'date');
 		
-		$sql1 = "SELECT * FROM issue_database WHERE usn='$usn'";
+		$sql1 = "SELECT * FROM issue_database WHERE student_id='$studentid'";
 		$res = $conn->query($sql1);
 
 		if ($res->num_rows < 3) {
 		
-			$sql1 = "SELECT * FROM book_database WHERE book_id='$bookid' AND qty>0";
+			$sql1 = "SELECT * FROM book_database WHERE book_id='$bookid' AND quantity>0";
 			$result = $conn->query($sql1);
 
 			if ($result->num_rows > 0) {
-				$sql = "INSERT INTO issue_database (book_id, usn, date) 
-				VALUES ('$bookid','$usn','$date')";
+				$sql = "INSERT INTO issue_database (student_id,book_id, date) 
+				VALUES ('$studentid','$bookid','$date')";
 			
 				if ($conn->query($sql) === TRUE) {
-				$sql2 = "UPDATE book_database SET qty=qty-1 WHERE book_id='$bookid'";
+				$sql2 = "UPDATE book_database SET quantity=quantity-1 WHERE book_id='$bookid'";
 				$resul = $conn->query($sql2);
 				
 				//echo "New record created successfully";
