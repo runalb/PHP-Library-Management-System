@@ -18,7 +18,8 @@ session_start();
         <a class="navbar-brand my-0 mr-md-auto" href="dashboard.php">
             <img src="images/logo.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
         </a>
-        <button class="btn btn-outline logout-btn" onclick="location.href="user-logout.php" ">Login</button>
+        <button class="btn btn-outline logout-btn" onclick="location.href='user-login.php'">Login</button>
+
     </div>
 
     
