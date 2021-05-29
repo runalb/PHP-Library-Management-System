@@ -41,7 +41,7 @@ session_start();
                 </div>
 
                 
-                  <form action="search-action.php" method="get">
+                  <form action="search-books-action.php" method="get">
                   <div class="input-group md-form form-md form-2 pl-0">
                     <input class="form-control my-0 py-1" name="query" type="text" placeholder="Enter Book ID or Name" aria-label="Search">
                     <div class="input-group-append">
