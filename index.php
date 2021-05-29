@@ -46,24 +46,83 @@ session_start();
         
         <button class="btn btn-outline logout-btn" onclick="location.href='user-login.php'">Login</button>
     </div> 
-      
+
+   
       
     <div class="container h-100">
-        <div class="row">
+        <div class="row text-center align-items-center h-100 " >
 
-            <div class="col-12 col-lg-12 ">
-                <div class="row align-items-center h-100" >
-                    <div class="col-5 mx-auto">
 
-                        
-                        <!-- ADD HERE -->
-
-                        
+            <div class="col-12 mx-auto">
+                <div class="mt-4">
+                    <div class="text-center p-2">
+                        <h1 class="theme-color">Library Management System</h1>
+                        <h5>DBMS Mini Project</h5>
                     </div>
                 </div>
             </div>
 
+
+
+            <div class="col-12 mx-auto">
+                <div class="mt-4">
+                    <div class="text-center p-2">
+                        <h3 class="theme-color">Developer</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            
+                    
+
+                        
+           
+            <div class="col-lg-12 center team-menbers">
+                <img src="images/runal.png" class="rounded-circle" width="120" height="120">
+                <h6 class="m-1">Runal Banarse</h6>
+                <a href="#" class="theme-color">runalb.com</a>
+            </div>
+
+
+           
+
+            
+
+            
+
+            
+            
+            
+            
+                     
+                    
+               
         </div>
     </div>
+
+
+
+  <!-- Team member 3 HERE -->
+
+                <!-- <div class="col-lg-4 center team-menbers">
+                    <img src="images/runal.png" class="rounded-circle" width="120" height="120">
+                    <h6 class="m-1">Runal Banarse</h6>
+                    <a href="#" class="theme-color">runalb.com</a>
+                </div>
+
+                <div class="col-lg-4 center team-menbers">
+                    <img src="images/runal.png" class="rounded-circle" width="120" height="120">
+                    <h6 class="m-1">Runal Banarse</h6>
+                    <a href="#" class="theme-color">runalb.com</a>
+                </div>
+
+                <div class="col-lg-4 center team-menbers">
+                    <img src="images/runal.png" class="rounded-circle" width="120" height="120">
+                    <h6 class="m-1">Runal Banarse</h6>
+                    <a href="#" class="theme-color">runalb.com</a>
+                </div> -->
+
+
 </body>
 </html>
