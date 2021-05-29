@@ -16,8 +16,8 @@ session_start();
 </head>
 <body>
   <?php
-      if($_SESSION["userid"] === ""){
-        echo $_SESSION['userid'];
+      if($_SESSION["username"] === ""){
+        echo $_SESSION['username'];
         echo "login";
         header("Location: index.php ");
       }

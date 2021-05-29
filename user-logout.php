@@ -16,7 +16,7 @@ session_start();
 
     
 <?php
-    $_SESSION["userid"] = "";
+    $_SESSION["username"] = "";
     header("Location: index.php");
 ?>
 </body>
