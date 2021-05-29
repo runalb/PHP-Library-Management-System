@@ -78,7 +78,7 @@ session_start();
             
             if($aaa=='+')
             {
-                echo "<h3 class='text-center m-4'>Fine : Rs ".$aa."</h3><form action='book-returned.php'><button class='btn btn-block login-btn' type='submit'>pay</button></form><form action='dashboard.php'><button class='btn btn-block bg-light mt-2' type='submit'>Cancel</button></form>";
+                echo "<h3 class='text-center m-4'>Fine : Rs ".$aa."</h3><form action='return-book-action2.php'><button class='btn btn-block login-btn' type='submit'>pay</button></form><form action='dashboard.php'><button class='btn btn-block bg-light mt-2' type='submit'>Cancel</button></form>";
             }
             else{
                 

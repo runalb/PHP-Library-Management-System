@@ -41,7 +41,7 @@ session_start();
                     <div class="col form-header text-center p-3">
                         Return Book
                     </div>
-                    <form action="return-books-action.php" method="get">
+                    <form action="return-book-action.php" method="get">
                         <div class="form-group mx-4 mt-4">
                             <input type="text" required name="studentid" class="form-control" placeholder="Student ID">
                         </div>
