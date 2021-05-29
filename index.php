@@ -74,7 +74,7 @@ session_start();
 
 
         <!-- Team member-2 HERE -->
-        <div class="row center text-center align-items-center team-menbers">
+        <!-- <div class="row center text-center align-items-center team-menbers">
             <div class="col-3">
             </div>
             <div class="col-3">
@@ -89,12 +89,13 @@ session_start();
             </div>
             <div class="col-3">
             </div>
-        </div>
+        </div> -->
+        <!-- Team member-2 END HERE -->
 
 
 
         <!-- Team member-3 HERE -->
-        <!-- <div class="row center text-center align-items-center team-menbers">
+        <div class="row center text-center align-items-center team-menbers">
             <div class="col-12">
                 <div class="row">
                     <div class="col-2">
@@ -124,7 +125,8 @@ session_start();
                     </div>
                 </div>
             </div>   
-        </div> -->
+        </div>
+        <!-- Team member-3 END HERE -->
 
     </div>
 
