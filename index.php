@@ -44,7 +44,7 @@ session_start();
             <img src="images/simplelogo-dark.svg" alt="logo" width="130" height="30" alt="Logo" loading="lazy">
         </a>
         
-        <button class="btn btn-outline logout-btn" onclick="location.href='user-logout.php'">Login</button>
+        <button class="btn btn-outline logout-btn" onclick="location.href='user-login.php'">Login</button>
     </div> 
       
       
@@ -55,23 +55,10 @@ session_start();
                 <div class="row align-items-center h-100" >
                     <div class="col-5 mx-auto">
 
-                        <div class="mt-4">
-                            <div class="text-center p-3">
-                                <h2 class="theme-color">Login</h2>
-                            </div>
-                        </div>
+                        
+                        <!-- ADD HERE -->
 
-                        <form action="user-login.php" method="get">
-                            <div class="form-group">
-                            <label for="loginUsername">Username</label>
-                            <input type="text" name="userid" class="form-control" id="loginUsername" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group pb-2">
-                            <label for="loginPassword">Password</label>
-                            <input type="password" name="userpass" class="form-control" id="loginPassword">
-                            </div>
-                            <button type="submit" class="btn login-btn btn-block">Login</button>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
