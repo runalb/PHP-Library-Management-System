@@ -33,7 +33,7 @@ session_start();
 
   <div class="mt-4">
     <div class="text-center p-3">
-        <h2 class="theme-color" id="welcome">Welcome Back !</h2>
+        <h2 class="theme-color" id="welcome">Dashboard</h2>
     </div>
   </div>
 
