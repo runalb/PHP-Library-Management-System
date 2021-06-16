@@ -35,78 +35,21 @@ session_start();
             </div>
             <div class="col-12 mx-auto">
                 <div class="mt-4">
-                    <div class="text-center p-2">
-                        <h3 class="theme-color">Team Members</h3>
+                    <div class="text-center">
+                        <h3 class="theme-color">Developer</h3>
                     </div>
                 </div>
             </div>
       
            
             <!-- Team member-1 HERE -->
-            <!-- <div class="col-lg-12 center team-menbers">
+            <div class="col-lg-12 center team-menbers">
                 <img src="images/runal.png" class="rounded-circle" width="120" height="120">
                 <h6 class="m-1">Runal Banarse</h6>
-                <a href="#" class="theme-color">runalb.com</a>
-            </div> -->
+                <a href="http://runalb.com" class="theme-color">runalb.com</a>
+            </div>
                
         </div>
-
-
-        <!-- Team member-2 HERE -->
-        <!-- <div class="row center text-center align-items-center team-menbers">
-            <div class="col-3">
-            </div>
-            <div class="col-3">
-                <img src="images/runal.png" class="rounded-circle" width="100" height="100">
-                <h6 class="m-1">Runal Banarse</h6>
-                <a href="#" class="theme-color">runalb.com</a>
-            </div>   
-            <div class="col-3">
-                <img src="images/runal.png" class="rounded-circle" width="100" height="100">
-                <h6 class="m-1">Runal Banarse</h6>
-                <a href="#" class="theme-color">runalb.com</a>
-            </div>
-            <div class="col-3">
-            </div>
-        </div> -->
-        <!-- Team member-2 END HERE -->
-
-
-
-        <!-- Team member-3 HERE -->
-        <div class="row center text-center align-items-center team-menbers">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-2">
-                    </div>
-                    <div class="col-8">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="images/runal.png" class="rounded-circle" width="100" height="100">
-                                <h6 class="m-1">Runal Banarse</h6>
-                                <a href="#" class="theme-color">runalb.com</a>
-                            </div>  
-
-                            <div class="col-4">
-                                <img src="images/runal.png" class="rounded-circle" width="100" height="100">
-                                <h6 class="m-1">Runal Banarse</h6>
-                                <a href="#" class="theme-color">runalb.com</a>
-                            </div>
-
-                            <div class="col-4">
-                                <img src="images/runal.png" class="rounded-circle" width="100" height="100">
-                                <h6 class="m-1">Runal Banarse</h6>
-                                <a href="#" class="theme-color">runalb.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                    </div>
-                </div>
-            </div>   
-        </div>
-        <!-- Team member-3 END HERE -->
-
     </div>
 
 </body>
