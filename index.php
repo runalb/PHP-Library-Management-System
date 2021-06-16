@@ -40,9 +40,6 @@ session_start();
                     </div>
                 </div>
             </div>
-      
-           
-            <!-- Team member-1 HERE -->
             <div class="col-lg-12 center team-menbers">
                 <img src="images/runal.png" class="rounded-circle" width="120" height="120">
                 <h6 class="m-1">Runal Banarse</h6>
